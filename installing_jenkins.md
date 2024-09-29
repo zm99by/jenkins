@@ -142,3 +142,13 @@ Follow the instructions on the screen to access the administrative password that
 
 Note that you might need to issue the `sudo chmod 0755 name_of_dir` command to access the file that contains the initial password.
 
+## Install essential plugins
+
+Many of the features of Jenkins are implemented as plugins. Before opening Jenkins, you need to install a set of essential plugins that are required:
+
+![Initial plugins](./images/initial-plugins.png)  
+*Figure 4. Initial plugins*
+
+You can install additional plugins later.
+
+
