@@ -164,6 +164,14 @@ You can now access the Jenkins Home Page, also called the Jenkins Dashboard or t
 
 ![Classic Web UI](./images/jenkins-homepage.png) 
 
+## $JENKINS_HOME directory
+
+`JENKINS_HOME` refers to the Jenkins home directory, located in the `/var/lib/jenkins` directory by default. This location is where all the important data for Jenkins and its build goes. By default, it can be set either as a system property or an environment variable and can be verified from the system config page.
+
+The directory structure is shown here:
+
+![Jenkins Home directory structure](./images/jenkins-home-dir-structure.png)  
+*Figure 7. Jenkins Home directory structure*
 
 
 
