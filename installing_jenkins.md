@@ -99,3 +99,18 @@ You can deploy the Jenkins WAR file to an existing application server. Deploy th
 *Figure 1. Jenkins WAR on Tomcat*
 
 This may fit in better with existing infrastructures.
+
+## Installing Jenkins in containers
+
+Jenkins can be installed in either a Docker or Kubernetes container. Both container types are based on the standalone Jenkins WAR and provide:
+
+- Weekly and Long Term Support (LTS) Jenkins versions.
+- Extensible, which can be used to build your own Docker or Kubernetes Image.
+
+## Installing Jenkins in a Docker container
+
+The Official Docker image is on DockerHub: [https://hub.docker.com/r/jenkins/jenkins/](https://hub.docker.com/r/jenkins/jenkins/). This provides Docker infrastructure native integration.
+
+![Jenkins on Docker](./path/to/local/image/jenkins-on-docker.png)  
+*Figure 2. Jenkins on Docker*
+
