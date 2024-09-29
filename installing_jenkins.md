@@ -85,5 +85,16 @@ The standalone application reacts to `SIGTERM` and `SIGINT` to initiate a proper
 
 The following configuration example makes the Jenkins instance reachable only on [http://127.0.0.1:8081/ci](http://127.0.0.1:8081/ci).
 
+```bash
+java -jar jenkins.war --httpPort=8081 --prefix=/ci --httpListenAddress=127.0.0.1
+```
+For more information, see the [Starting and Accessing Jenkins](https://www.jenkins.io/doc/book/installing/initial-settings/#configuring-http/) documentation.
 
+## Running Jenkins on an application server
 
+You can deploy the Jenkins WAR file to an existing application server. Deploy the `jenkins.war` file in the usual manner:
+
+![Jenkins WAR on Tomcat](https://www.jenkins.io/images/war-on-tomcat.png)  
+*Figure 1. Jenkins WAR on Tomcat*
+
+This may fit in better with existing infrastructures.
