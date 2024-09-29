@@ -1,28 +1,25 @@
+Jenkins is distributed on many channels, including:
 
-Linux Native Packages are based on the standalone `jenkins.war` files (with an embedded Jetty Application Server). They install Jenkins and do the following:
+- OS native packages (RPM, DEB, and others)
+- WAR file
+- Docker image
+- Cloud templates (AWS, Azure, and others)
 
-- Create a jenkins user.
-- Set up service scripts (init.d, upstart or systemd).
-- Follow native conventions for configuration files.
-- Provide log rotation out of the box.
+Start from the [Jenkins download page](https://www.jenkins.io/download/).
 
-File locations are:
+## Installing from Linux packages
 
-- Settings are located in `/etc/sysconfig/jenkins`
-- `$JENKINS_HOME` defaults to the location `/var/lib/jenkins`
+Native packages are available for major Linux distributions. The major ones are:
 
-## Installing on Microsoft Windows
+- RPM for Red Hat family.
+- Deb for Debian/Ubuntu.
+- Linux Mint, OpenSUSE, and many others.
 
-Run one of the following:
+Pattern with package managers:
 
-- `setup.exe`
-- `jenkins.msi`, if .NET 2.0 runtime is already available
+- Add the Jenkins Package Repository.
+- Install and start Jenkins.
 
-These scripts install Jenkins as a Windows service with files installed into the `$JENKINS_HOME` folder.
+An example for the Red Hat family (note, these commands may need `sudo` appended for proper permissions):
 
-The Web Application Archive (WAR) distribution of Jenkins can be run as a standalone application or in a servlet container.
-
-## Running the Jenkins WAR as a standalone application
-
-Run the Jenkins WAR as a standalone application from the command line. This uses an embedded application server (Jetty) and provides some extra features (restart from the web interface and others).
 
