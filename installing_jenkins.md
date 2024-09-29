@@ -94,7 +94,7 @@ For more information, see the [Starting and Accessing Jenkins](https://www.jenki
 
 You can deploy the Jenkins WAR file to an existing application server. Deploy the `jenkins.war` file in the usual manner:
 
-[Jenkins WAR on Tomcat](./images/war-on-tomcat.png)
+![Jenkins WAR on Tomcat](./images/war-on-tomcat.png)
   
 *Figure 1. Jenkins WAR on Tomcat*
 
