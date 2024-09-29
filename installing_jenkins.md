@@ -111,6 +111,6 @@ Jenkins can be installed in either a Docker or Kubernetes container. Both contai
 
 The Official Docker image is on DockerHub: [https://hub.docker.com/r/jenkins/jenkins/](https://hub.docker.com/r/jenkins/jenkins/). This provides Docker infrastructure native integration.
 
-![Jenkins on Docker](./image/jenkins-on-docker.png)  
+![Jenkins on Docker](./images/jenkins-on-docker.png)  
 *Figure 2. Jenkins on Docker*
 
