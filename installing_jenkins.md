@@ -114,3 +114,31 @@ The Official Docker image is on DockerHub: [https://hub.docker.com/r/jenkins/jen
 ![Jenkins on Docker](./images/jenkins-on-docker.png)  
 *Figure 2. Jenkins on Docker*
 
+## Installing Jenkins in a Kubernetes container
+
+The Official Helm chart is provided at [https://github.com/jenkinsci/helm-charts](https://github.com/jenkinsci/helm-charts). Helm is the package manager used to find, share, and use software built for Kubernetes.
+
+Jenkins X is an opinionated platform for providing CI / CD on top of Kubernetes. Find more information about the Jenkins-X project: [https://jenkins-x.io](https://jenkins-x.io).
+
+## Post-Installation wizard
+
+The post-installation wizard takes you through a few quick initial configuration steps that are required before you can view the Jenkins Home Page:
+
+- Bring up a web browser and go to the `http://<myServer>:8080` URL. Replace `<myServer>` with the name or IP address of the system running Jenkins.
+  
+- Follow the instructions on the screen to:
+  - Unlock Jenkins.
+  - Install essential plugins.
+  - Create the first admin user.
+
+See [Setup Wizard](https://www.jenkins.io/doc/book/installing/setup-wizard/) for more details.
+
+## Unlock Jenkins
+
+Follow the instructions on the screen to access the administrative password that was set:
+
+![Unlock Jenkins](./images/unlock-jenkins.png)  
+*Figure 3. Unlock Jenkins*
+
+Note that you might need to issue the `sudo chmod 0755 name_of_dir` command to access the file that contains the initial password.
+
