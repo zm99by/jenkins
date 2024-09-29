@@ -173,5 +173,22 @@ The directory structure is shown here:
 ![Jenkins Home directory structure](./images/jenkins-home-dir-structure.png)  
 *Figure 7. Jenkins Home directory structure*
 
+## What did we learn?
+
+- Jenkins is distributed in many channels, even Docker.
+- Try to use the standalone version.
+- Tune your JVM and operating system and monitor performance.
+- Know your Jenkins Configuration and Jenkins Home locations.
+
+## Going further
+
+Recommended readings on this subject:
+
+- [Jenkins Home Page](https://www.jenkins.io/)
+- [Installing and Starting Jenkins](https://www.jenkins.io/doc/book/installing/)
+- Oracle, [Understanding Memory Management](https://docs.oracle.com/en/java/javase/11/gctuning/introduction-garbage-collection-tuning.html)
+- [limits.conf(5) man page](http://man7.org/linux/man-pages/man5/limits.conf.5.html)
+- [Docker Repository for Jenkins](https://hub.docker.com/r/jenkins/jenkins/)
+
 
 
