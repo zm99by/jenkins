@@ -151,4 +151,14 @@ Many of the features of Jenkins are implemented as plugins. Before opening Jenki
 
 You can install additional plugins later.
 
+## Create first admin user
+
+Create the first `admin` user by filling out the form on this screen, then click **Save and Finish**.
+
+![Create first admin user](./images/create-first-admin-user.png)  
+*Figure 5. Create first admin user*
+
+You can create additional users after Jenkins is running.
+
+
 
