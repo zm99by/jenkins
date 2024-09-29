@@ -54,4 +54,36 @@ These scripts install Jenkins as a Windows service with files installed into the
 
 The Web Application Archive (WAR) distribution of Jenkins can be run as a standalone application or in a servlet container.
 
+## Running the Jenkins WAR as a standalone application
+
+Run the Jenkins WAR as a standalone application from the command line. This uses an embedded application server (Jetty) and provides some extra features (restart from the web interface and others).
+
+```bash
+$ java ${JAVA_OPTS} -jar jenkins.war ${JENKINS_OPTS}
+```
+
+The following command line options are configured by startup flags (JENKINS_OPTS):
+
+- `--prefix $PREFIX` (default: `/`)  
+  Runs Jenkins to include the `$PREFIX` at the end of the URL.
+
+- `--httpPort $PORT` (default: `8080`)  
+  Jenkins listens on `$PORT` port.
+
+- `--httpListenAddress $HTTP_HOST` (default: `0.0.0.0`)  
+  Binds Jenkins to the IP address represented by `$HTTP_HOST`.
+
+- `--logfile $LOGFILE`  
+  Write to `$LOGFILE` instead of stdout.
+
+These flags are passed as members of the JENKINS_OPTS variable, mentioned earlier.
+
+- See [Starting and Accessing Jenkins](https://www.jenkins.io/doc/book/installing/#starting-and-accessing-jenkins) for a complete list of start-up flags that are available.
+- Caveat: If you misspell an option, Jenkins ignores it rather than generating an error.
+
+The standalone application reacts to `SIGTERM` and `SIGINT` to initiate a proper shutdown. The log file is reopened when it receives a `SIGALARM` to allow log rotation.
+
+The following configuration example makes the Jenkins instance reachable only on [http://127.0.0.1:8081/ci](http://127.0.0.1:8081/ci).
+
+
 
