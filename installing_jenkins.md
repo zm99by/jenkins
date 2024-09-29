@@ -160,5 +160,10 @@ Create the first `admin` user by filling out the form on this screen, then click
 
 You can create additional users after Jenkins is running.
 
+You can now access the Jenkins Home Page, also called the Jenkins Dashboard or the Classic Web UI
+
+![Classic Web UI](./images/jenkins-homepage.png) 
+
+
 
 
