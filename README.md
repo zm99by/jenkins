@@ -9,13 +9,13 @@ Java 8 or Java 11 is required. Jenkins Long Term Support (LTS) runs on Java 11 b
 > **Note**  
 > As a rule, Jenkins only supports LTS JVM releases, so Java 8 and Java 11 are supported. (Jenkins supports JDK 11 beginning in Release 2.164.1.) Java 9 and 10 will never be supported.
 
-# Tuning the JVM and operating system
+## Tuning the JVM and operating system
 
 The Java Virtual Machine (JVM) must be tuned using these settings.
 
-- Memory Heap size: -Xms1G -Xmx2G
+- Memory Heap size: `-Xms1G` `-Xmx2G`
+- G1 garbage collector for heap > 4GB: `-XX:+UseG1GC`
 
-- G1 garbage collector for heap > 4GB: -XX:+UseG1GC
 
 Check your Java Memory documentation for details.
 
