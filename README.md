@@ -57,8 +57,8 @@ Best practices for disk space
 # For further reading
 [Installing Jenkins](https://www.jenkins.io/doc/book/installing/) discusses various ways to install Jenkins, including on Docker and Kubernetes.
 
-The Initial Settings section gives detailed information about setting network and other parameters and setting up HTTP.
+[The Initial Settings](https://www.jenkins.io/doc/book/installing/initial-settings/) section gives detailed information about setting network and other parameters and setting up HTTP.
 
-The Tuning Jenkins GC for Responsiveness and stabiliy with Large Instances blog provides background information and useful recommendations.
+[The Tuning Jenkins GC for Responsiveness and Stability with Large Instances](https://www.jenkins.io/blog/2016/11/21/gc-tuning/) blog provides background information and useful recommendations.
 
-Scaling Jenkins has more information about hardware requirements and considerations.
+[Scaling Jenkins](https://www.jenkins.io/doc/book/scaling/) has more information about hardware requirements and considerations.
